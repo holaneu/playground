@@ -19,7 +19,7 @@ function ref() {
         'ahoj.cz'
     ];
 
-    var referrer = 'https://ua.ahoj.cz/?a=a&b=b'; //document.referrer
+    var referrer = 'http://test.ahoj.cz/?utm_campaign=cc&utm_source=cc&utm_medium=cc'; //document.referrer
     console.log('*** referrer: ', referrer);
     var hostname = new RegExp('https?://([^/:]+)').exec(referrer);
     console.log('*** hostname: ', hostname);
