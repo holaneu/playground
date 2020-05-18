@@ -1,3 +1,9 @@
+/** simple datalayer push event generator */
+var eventList = 'cartAdd,download,ecommerceTransaction,filter,login,outbound_link,productClick,productDetailView,promotionClick,promotionView,registerConsultant,search,share,sort,test_event,userRegistered,userUpgraded';
+var events = eventList.split(',');
+events.forEach(function(item, index) { window.dataLayer.push({'event' : item}); });
+
+
 /* dlp = 'datalayer push' */
 function dlp(eventName, eventParameters) {
     if(eventName) 
@@ -24,29 +30,7 @@ dlp('filter',{'filter_type' : 'brand', 'filter_value' : 'Giordani'});
 dlp('test_event');
 dlp('ecommerceTransaction');
 
-/* -------------- */
 
-window.dataLayer.push({'event' : 'sort'});
-window.dataLayer.push({'event' : 'cartAdd'});
-window.dataLayer.push({'event' : 'filter'});
-window.dataLayer.push({'event' : 'share'});
 
-/*
-search
-download
-promotionView
-promotionClick
-productClick
-productDetailView
-cartAdd
-ecommerceTransaction
-filter
-sort
-share
-outbound_link
-registerConsultant
-login
-userRegistered
-userUpgraded
 
-*/
+
