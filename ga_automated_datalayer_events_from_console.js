@@ -24,6 +24,8 @@ var eventList = [
     'virtualPageView'
 ];
 
+window.dataLayer = window.dataLayer || [];
+
 /* pushes with interval timer */
 function dlp2() {
     var index = 0;
