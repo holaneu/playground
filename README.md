@@ -1,2 +1,2 @@
-# holaneu playground
-Personal repo for learning purpose and storing some usefull code fragments :-)
+# playground
+ Personal repo for learning with GitHub ...
