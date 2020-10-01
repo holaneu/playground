@@ -1,4 +1,2 @@
-# hello-world
- Only for learning with GitHub ...
-
- ## header 2
+# holaneu playground
+Personal repo for learning purpose and storing some usefull code fragments :-)
