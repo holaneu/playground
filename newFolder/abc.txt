@@ -1,0 +1,6 @@
+//ahoj
+//tohle je nejakej test text
+console.log(
+  'some txt here'
+);
+//ahoj
