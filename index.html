@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Load File with XHR</title>
+  </head>
+  <body>
+    <h1>File Content:</h1>
+    <pre id="file-content"></pre>
+
+    <script>
+      function loadFile() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("file-content").innerHTML = this.responseText;
+          }
+        };
+        xhr.open("GET", "_python/test_cron_files/test_cron.txt", true);
+        xhr.send();
+      }
+
+      window.onload = loadFile;
+    </script>
+  </body>
+</html>
