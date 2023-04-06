@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install json re requests random
+          pip install json re requests random datetime
 
       - name: Run test_cron.py
         run: python _python/test_cron.py
