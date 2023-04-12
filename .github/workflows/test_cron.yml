@@ -1,4 +1,4 @@
-name: Run Python script every 5 minutes
+name: Run Python scripts every 5 minutes
 
 on:
   schedule:
