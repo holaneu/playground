@@ -1,4 +1,4 @@
-name: Run Workflow test Python Bash
+name: Test workflow - python, bash
 
 on:
   schedule:
