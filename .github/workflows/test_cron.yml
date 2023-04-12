@@ -1,0 +1,35 @@
+name: Run Workflow test Python Bash
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: playground-dev
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      
+      - name: Run Python script 1
+        run: python3 _python/test_cron.py
+        
+      - name: Run Python script 2
+        run: python3 test_cron_2.py
+        
+      - name: Run Python script 3
+        run: python test_cron_2.py
+        
+  run-bash-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Bash command
+        run: echo "ahoj" #>> test_bash.txt
+        
