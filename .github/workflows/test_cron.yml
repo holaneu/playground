@@ -5,7 +5,7 @@ on:
     - cron: '*/5 * * * *'
 
 jobs:
-  build:
+  cron-test-example:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
