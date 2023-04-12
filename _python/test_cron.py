@@ -11,4 +11,4 @@ print(f"File path: {path}")
 print(f"Formatted date: {formatted_date}")
 
 with open(path, 'a', encoding='utf-8') as f:
-    f.write(formatted_date + '\n')
+    f.write('origin:_python, ' + formatted_date + '\n')
