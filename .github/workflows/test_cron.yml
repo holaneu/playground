@@ -1,4 +1,4 @@
-name: Run Workflow test Python, Bash
+name: Run Workflow test Python Bash
 
 on:
   schedule:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: playground-dev
       
@@ -31,4 +31,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Bash command
-        run: echo 'ahoj' #>> test_bash.txt
+        run: echo "ahoj" #>> test_bash.txt
