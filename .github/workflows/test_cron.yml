@@ -1,4 +1,4 @@
-name: Run Python scripts every 5 minutes
+name: Run Workflow test Python, Bash
 
 on:
   schedule:
@@ -31,5 +31,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Bash command
-        run: echo 'ahoj' >> test_bash.txt
-
+        run: echo 'ahoj' #>> test_bash.txt
