@@ -18,5 +18,8 @@ jobs:
         with:
           python-version: 3.x
       
-      - name: Run Python script
+      - name: Run Python script 1
         run: python3 _python/test_cron.py
+        
+      - name: Run Python script 2
+        run: python3 test_cron_2.py
