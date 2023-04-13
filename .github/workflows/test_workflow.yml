@@ -31,5 +31,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Bash command
-        run: echo "ahoj" #>> test_bash.txt
+        run: echo "ahoj" >> test_bash.txt
         
