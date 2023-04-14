@@ -25,9 +25,14 @@ jobs:
       - name: Run Python script 3
         run: python test_cron_root.py
         
-  run-bash-command:
-    runs-on: ubuntu-latest
-    steps:
       - name: Run Bash command and save to file in root
         run: echo "ahoj" >> test_bash.txt
         
+      - name: Uloz zpravu do repozitare
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Posledni data: ${timestamp}" || exit 0
+          git push        
