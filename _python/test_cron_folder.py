@@ -2,7 +2,8 @@ from datetime import datetime
 import os
 
 working_directory = os.getcwd()
-path = working_directory + '/_python/test_cron_files/test_cron_folder.txt' 
+#path = working_directory + '/_python/test_cron_files/test_cron_folder.txt'
+path = '_python/test_cron_files/test_cron_folder.txt' 
 now = datetime.now()
 formatted_date = now.strftime('%Y%m%d%H%M%S')
 
