@@ -17,13 +17,13 @@ jobs:
           python-version: 3.8
       
       - name: Run Python script in _python
-        run: python3 _python/test_cron.py
+        run: python3 _python/test_cron_folder.py
         
       - name: Run Python script in root
         run: python3 test_cron_root.py
         
       - name: Run Python script 3
-        run: python test_cron_roo.py
+        run: python test_cron_root.py
         
   run-bash-command:
     runs-on: ubuntu-latest
